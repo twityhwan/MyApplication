@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,18 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
         btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                TextView textView = (TextView)findViewById(R.id.tv1);
-                textView.setText("Good Afternoon");
+                Toast.makeText(MainActivity.this, "Toast!",
+                        Toast.LENGTH_SHORT).show();
             }
         });
-        Button btn2 = (Button)findViewById(R.id.btn2);
-
-        btn2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                TextView textView = (TextView)findViewById(R.id.tv1);
-                textView.setText("Good Evening");
-            }
-        });
-
     }
 }
