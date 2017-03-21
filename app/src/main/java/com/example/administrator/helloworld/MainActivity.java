@@ -22,5 +22,14 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText("Good Afternoon");
             }
         });
+        Button btn2 = (Button)findViewById(R.id.btn2);
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                TextView textView = (TextView)findViewById(R.id.tv1);
+                textView.setText("Good Evening");
+            }
+        });
+
     }
 }
