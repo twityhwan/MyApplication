@@ -10,7 +10,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView txtView = (TextView)findViewById(R.id.tv1);
-        txtView.setText("Good Afternoon");
+        TextView getTextView = (TextView)findViewById(R.id.tv1);
+        TextView setTextView = (TextView)findViewById(R.id.tv2);
+
+        setTextView.setText("Text: "+getTextView.getText() + "\n" +
+                    "TextSize: "+getTextView.getTextSize()+"" +"\n" +
+                    "PaddingLeft: "+getTextView.getPaddingLeft());
     }
 }
