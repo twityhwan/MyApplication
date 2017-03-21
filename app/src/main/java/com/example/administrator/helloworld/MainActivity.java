@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         TextView setTextView = (TextView)findViewById(R.id.tv2);
 
         setTextView.setText("Text: "+getTextView.getText() + "\n" +
-                    "TextSize: "+getTextView.getTextSize()+"" +"\n" +
+                    "TextSize: "+getTextView.getTextSize() +"\n" +
                     "PaddingLeft: "+getTextView.getPaddingLeft());
     }
 }
